@@ -1,2 +1,10 @@
 <app-server></app-server>
 <app-server></app-server>
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+<button
+    class="btn btn-primary"
+    [disabled]="!allowNewServer"
+    (click)="onButtonClick()"
+>
+    Add server
+</button>
